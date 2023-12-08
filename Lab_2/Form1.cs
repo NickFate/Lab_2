@@ -78,6 +78,8 @@ namespace Lab_2
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            if (Canvas.Image == null) return;
+
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
 
             saveFileDialog1.Filter = "bmp files (*.bmp)|*.bmp|All files (*.*)|*.*";
